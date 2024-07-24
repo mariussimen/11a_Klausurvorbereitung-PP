@@ -78,3 +78,41 @@
 
 
 
+function summe(a,b) {
+    return a+b;
+    
+}
+function differenz(a,b) {
+    return a-b;
+
+}
+
+function rechner(a,b,operator) {
+    let Ergebnis;
+
+// if (operator === "+") {
+
+//     Ergebnis = (a+b);
+
+// }
+// else if (operator === "-") {
+
+//     Ergebnis = differenz(a,b);
+// }
+// else {
+//     Ergebnis =" Feierabend!";
+// }
+switch (operator) {
+    case "+":
+         Ergebnis = summe(a,b);
+         break;
+    case "-":
+         Ergebnis = a-b;
+         break;
+    default:
+        Ergebnis = "Feierabend";
+}
+console.log("Das Ergebnis lautet: " , Ergebnis);
+}
+rechner(12,3,"+");
+rechner(12,3,"-");
